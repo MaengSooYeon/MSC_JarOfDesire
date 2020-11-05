@@ -4,4 +4,4 @@
 (🔊 오디오가 포함되어 있습니다.)  
   
 제작 기간 : 20201024 ~ ing    
-개발 환경 / 사용 언어 : Visual Studio Code / HTML, CSS, JavaScript   
+개발 환경 / 사용 언어 : Visual Studio Code / HTML, CSS, JavaScript, JQuery   
