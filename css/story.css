@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* 기본값 세팅 */
+*{margin: 0; padding: 0;}
+
+body
+    {
+        position: absolute; left: 50%; top: 50%; 
+        transform: translate(-50%, -50%); text-align: center;
+        background: white;
+    }
+
+/* 스토리 내용 */
+.story_content
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14pt;
+        font-style: unset;
+        line-height: 1.6em;
+        text-align: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+    }
+
+/* 버튼 설정 */
+.next_story_btn 
+    {
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+    }
+
+/* container */
+.wrap
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+
+/*타이핑 효과 추가하기*/
