@@ -3,28 +3,67 @@
         <meta charset="UTF-8">
         <title>바이러스 설명</title>
         <link rel="stylesheet" type="text/css" href="css/virus_description.css">
+        <script type="text/javascript" src="js/virus_description.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
         <body>
             <div class="wrap">
-                <div class="container">
                     <div class="container_box">
                         <div id="List">
                             <ul><font color="#331a00">
-                                <li><a href="#">코로나 바이러스</a></li>
-                                <li><a href="#">메르스</a></li>
-                                <li><a href="#">신종플루</a></li>
-                                <li><a href="#">사스</a></li>
-                                <li><a href="#">페스트</a></li>
-                                <li><a href="#">니파뇌염</a></li>
-                                <li><a href="#">에이즈</a></li>
-                                <li><a href="#">헨드라 바이러스</a></li>
-                                <li><a href="#">지카 바이러스</a></li>
-                                <li><a href="#">에볼라 바이러스  </a></li>
-                                <li><a href="#">중증열성혈소판감소증후군</a></li>
-                            </font></ul></div>_
-                        <img src="image/screen/menu.png" style="width: 800px; height: 400px;">
+                                <li id="COVID-19"><a href="#">코로나19 바이러스</a></li>
+                                <li id="Mers"><a href="#">메르스</a></li>
+                                <li id="Influenza"><a href="#">신종플루</a></li>
+                                <li id="Sars"><a href="#">사스</a></li>
+                                <li id="Pest" ><a href="#">페스트</a></li>
+                                <li id="Nipha"><a href="#">니파뇌염</a></li>
+                                <li id="Aids"><a href="#">에이즈</a></li>
+                                <li id="Hendra"><a href="#">헨드라 바이러스</a></li>
+                                <li id="Zika"><a href="#">지카 바이러스</a></li>
+                                <li id="Ebola"><a href="#">에볼라 바이러스  </a></li>
+                                <li id="SFTS"><a href="#">중증열성혈소판감소증후군</a></li>
+                            </font></ul></div>
+                            <div class="virus_index">
+                        <p class="COVID_index"> 
+                            알려진 바로는 비말, 접촉을 통한 전파로 알려진 바이러스
+                            박쥐에서 기생하던 코로나 바이러스가 다른 동물을 중간 숙주로 거치는 과정에서
+                            변이를 통해 사람에게 전파된 것으로 추정되고 있다
+                            주로 발열, 기침, 호흡곤란 등의 증상 동반 심하면 호흡 부전, 폐렴 등으로 사망으로 이를 수 있다.
+                        </p>
+                        <p class="Mers_index" style="display:none"> 
+                            @
+                        </p>
+                        <p class="Influenza_index" style="display:none"> 
+                            #
+                        </p>
+                        <p class="Sars_index" style="display:none"> 
+                            $
+                        </p>
+                        <p class="Pest_index" style="display:none"> 
+                            %
+                        </p>
+                        <p class="Nipha_index" style="display:none"> 
+                            ^
+                        </p>
+                        <p class="Aids_index" style="display:none"> 
+                            &
+                        </p>
+                        <p class="Hendra_index" style="display:none"> 
+                            ~
+                        </p>
+                        <p class="Zika_index" style="display:none"> 
+                            !
+                        </p>
+                        <p class="Ebola_index" style="display:none"> 
+                            *
+                        </p>
+                        <p class="SFTS_index" style="display:none"> 
+                            +
+                        </p>
                     </div>
+                    <img src="image/screen/virus_menu.png" style="width: 860px; height: 380px;">
+                    <!-- <img src="image/screen/menu.png" style="width: 860px; height: 480px;"> -->
                 </div>
             </div>
         </body>
-    </head>
 </html>

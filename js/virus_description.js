@@ -1,0 +1,48 @@
+window.onload = function(){
+$(document).ready(function(){
+    $("#COVID-19").click(function(){
+        $("p.COVID_index").slideDown();
+        $("p").not("p.COVID_index").hide();
+    });
+    $("#Mers").click(function(){
+        $("p.Mers_index").slideDown();
+        $("p").not("p.Mers_index").hide();
+    });
+    $("#Influenza").click(function(){
+        $("p.Influenza_index").slideDown();
+        $("p").not("p.Influenza_index").hide();
+    });
+    $("#Sars").click(function(){
+        $("p.Sars_index").slideDown();
+        $("p").not("p.Sars_index").hide();
+    });
+    $("#Pest").click(function(){
+        $("p.Pest_index").slideDown();
+        $("p").not("p.Pest_index").hide();
+    });
+    $("#Nipha").click(function(){
+        $("p.Nipha_index").slideDown();
+        $("p").not("p.Nipha_index").hide();
+    });
+    $("#Aids").click(function(){
+        $("p.Aids_index").slideDown();
+        $("p").not("p.Aids_index").hide();
+    });
+    $("#Hendra").click(function(){
+        $("p.Hendra_index").slideDown();
+        $("p").not("p.Hendra_index").hide();
+    });
+    $("#Zika").click(function(){
+        $("p.Zika_index").slideDown();
+        $("p").not("p.Zika_index").hide();
+    });
+    $("#Ebola").click(function(){
+        $("p.Ebola_index").slideDown();
+        $("p").not("p.Ebola_index").hide();
+    });
+    $("#SFTS").click(function(){
+        $("p.SFTS_index").slideDown();
+        $("p").not("p.SFTS_index").hide();
+    });
+});
+}

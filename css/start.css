@@ -21,33 +21,30 @@ body
     }
 .container_box
     {
+        position: absolute;
         width: 960px;
         height: 480px;
         margin:0 auto;
-        background-image: url("image/screen/main_nobt"); 
-        display: inline-block;
+        display: inline-block; 
     }
 .import_button{
-    display: scroll;
     position: fixed;
-    top:320;
+    top:300;
     left: 110;
     border: none;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
 .start_button{
-    display: scroll;
     position: fixed;
-    top:300;
+    top:260;
     left: 640;
     border: none;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
 .virus_button{
-    display: scroll;
     position: fixed;
-    top:367;
-    left:640;
+    top:317;
+    left:638;
     border: none;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
