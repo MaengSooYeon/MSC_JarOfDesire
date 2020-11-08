@@ -13,6 +13,23 @@
             <source src="./audio/play_audio.ogg" type="audio/ogg" />
         </audio>
 
+        <!-- <iframe src="../silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="audio" autoplay>
+        <source src="../play_audio.mp3">
+        </audio>
+    
+        <audio autoplay="" loop="" style="display: none">
+            <source src="audio/play_audio.mp3" type="audio/mpeg">
+        </audio> -->
+
+        <!--
+        1) 이미지마다 위치 잡아주기 (포션, 항아리, 두루마리, 보따리)
+        2) 영어로 두루마리 위에는 How to Play / 보따리 위에는 RESET 적어놓기
+        3) 포션 클릭하면 항아리 바로 위에 pour한 포션 띄우기(각 색에 맞게 만약 yellow 포션을 눌렀다! -> yellow 포션 pour 보여줌)
+        4) 3번 기능과 동시에 오른쪽 위에 현재 포션 현황을 보여주기(사용한 포션)
+        5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
+        6) 현재 포션 현황에 있는 포션을 카운트를 매겨 카운트를 조합해 결과창 나오게 하기(팝업으로)
+        -->
 
         <div class="wrap">
             <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
@@ -24,13 +41,16 @@
 
             </div>
             <div class="cauldron">
-
-            </div>
-            <div class="reset">
-
+                <img src="image/icon/Cauldron.png" style="width: 450px; height: 320px;">
+                <!-- <img src="image/icon/Cauldron_change.png" style="width: 75px; height: 75px;">  -->
             </div>
             <div class="how_to_play">
-
+                <div class=howtoplay_text>HowToPlay</div>
+                <img src="image/icon/HowtoPlayBtn.png" style="width: 200px; height: 135px;">
+            </div>
+            <div class="reset">
+                <div class=reset_text>RESET</div>
+                <img src="image/icon/ResetBtn.png" style="width: 130px; height: 135px;">
             </div>
         </div>
     </body>

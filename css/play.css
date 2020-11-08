@@ -8,21 +8,6 @@ body
         background: white;
     }
 
-/* 텍스트 */
-.text_setting
-    {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14pt;
-        font-style: unset;
-        /* line-height: 1.6em; */
-        /* text-align: center; */
-
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate( -50%, -50% ); */
-    }
-
 /* container */
 .wrap
     {
@@ -31,3 +16,72 @@ body
         height: 100%;
         margin:0 auto;
     }
+
+
+/* text */
+/*.text_setting
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14pt;
+        font-style: unset;
+         line-height: 1.6em; 
+        /* text-align: center; 
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% ); 
+    } */
+.howtoplay_text
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16pt; 
+
+        position: absolute;
+        bottom: 35%;
+        left: 25%;
+    }
+.reset_text
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16pt;
+
+        position: absolute;
+        bottom: 25%;
+        right: 23%;
+    }
+
+/* .portion
+    {
+
+    } */
+
+.select_portion
+    {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+    }
+
+.cauldron 
+    {
+        position: absolute;
+        bottom: 0%;
+        right: 27%;
+    }
+
+
+.how_to_play 
+    {
+        position: absolute;
+        bottom: 0%;
+        left: 3%;
+    }
+
+.reset 
+    {
+        position: absolute;
+        bottom: 3%;
+        right: 10%;
+    }
+    
