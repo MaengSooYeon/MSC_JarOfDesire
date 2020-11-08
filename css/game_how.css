@@ -1,0 +1,26 @@
+/* 기본값 세팅 */
+*{margin: 0; padding: 0;}
+
+body
+    {
+        position: absolute; left: 50%; top: 50%; 
+        transform: translate(-50%, -50%); text-align: center;
+        background: white;
+    }
+
+/* 텍스트 */
+.text_setting
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14pt;
+        font-style: unset;
+    }
+
+/* container */
+.wrap
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }

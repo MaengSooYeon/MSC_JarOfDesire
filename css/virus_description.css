@@ -40,6 +40,17 @@ body
         transform: translate( -50%, -50% );
     }
 
+
+    ::-webkit-scrollbar{width: 16px;}
+    /* 가장 뒤 색깔 */
+    ::-webkit-scrollbar-track {background-color:rgb(255, 229, 189);}
+    /* 스크롤 위 아래 네모 까지 넓이 색상 */
+    ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    width:16px; height:16px; background-color: rgb(126, 100, 81);} 
+    /* 가장 중요한 스크롤러 색상 */
+    ::-webkit-scrollbar-thumb{
+        background-color: #d3904e;}
+
 a{
     text-decoration: none;
     color: #614c2d;
@@ -56,13 +67,6 @@ li{
     border-radius: 0px 0px 30px 30px;
     white-space:nowrap;
     overflow:auto;
-}
-
-#List::-webkit-scrollbar-thumb{
-    background-color: #bf8040;
-}
-#List::-webkit-scrollbar-track{
-    background-color: #e5cdb3;
 }
 
 #List ul li{
@@ -83,11 +87,4 @@ li{
     background: #cc9966;
     border-radius: 20px;
     color: #fff;
-}
-.image_blur{
-    -webkit-filter: blur(5px); 
-    -moz-filter: blur(5px); 
-    -o-filter: blur(5px); 
-    -ms-filter: blur(5px); 
-    filter: blur(5px);
 }
