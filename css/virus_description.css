@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/* 기본값 세팅 */
+* { 
+  margin:0; padding:0; 
+}
+
+body
+    {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-weight: bold;
+        position: absolute; left: 50%; top: 50%; 
+        transform: translate(-50%, -50%); text-align: center;
+        background: white;
+    }
+    
+.wrap{
+        width: 100%;
+        height: 500px;
+        max-width: 100%;
+        margin:0 auto;
+    }
+.container_box{
+        width: 960px;
+        height: 480px;
+        margin:0 auto;
+        background-color: darkgray;
+        display: inline-block;
+    }
+    .virus_index{
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 14pt;
+        font-style: unset;
+        line-height: 1.6em;
+        text-align: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+    }
+
+
+    ::-webkit-scrollbar{width: 16px;}
+    /* 가장 뒤 색깔 */
+    ::-webkit-scrollbar-track {background-color:rgb(255, 229, 189);}
+    /* 스크롤 위 아래 네모 까지 넓이 색상 */
+    ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    width:16px; height:16px; background-color: rgb(126, 100, 81);} 
+    /* 가장 중요한 스크롤러 색상 */
+    ::-webkit-scrollbar-thumb{
+        background-color: #d3904e;}
+
+a{
+    text-decoration: none;
+    color: #614c2d;
+}
+li{
+    list-style: none;
+}
+
+#List{
+    width: 960px;
+    height: 70px;
+    background-color: #dfbf9f;
+    border-radius: 3px;
+    border-radius: 0px 0px 30px 30px;
+    white-space:nowrap;
+    overflow:auto;
+}
+
+#List ul li{
+    font-family: 'Nanum Gothic Coding', monospace;
+    float: left;
+    width: 15%;
+    height: 100%;
+    left: 50%;
+    line-height: 50px;
+    text-align: center;
+    padding: 8px 0 15px 15px;
+}
+#List ul li a{
+    display: block;
+}
+
+#List ul li a:hover{
+    background: #cc9966;
+    border-radius: 20px;
+    color: #fff;
+}
