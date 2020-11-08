@@ -20,34 +20,34 @@ body
 
 /* portion position */
     /* pour_position */
-    .select_portion { position: absolute; top: 27%; right: 30%; }
+    .select_portion { position: absolute; bottom: 27%; right: 33%; }
 
     /* red portion */
-    .red_portion{ position: absolute; top: 2.8%; right: 36.5%; }
+    .red_portion{ position: absolute; top: 12%; right: 40.5%; }
 
     /* yellow portion */
-    .yellow_portion{ position: absolute; bottom: 43.7%; right: 29.5%; }
+    .yellow_portion{ position: absolute; top: 30%; right: 34%; }
 
     /* skyblue portion */
-    .skyblue_portion{ position: absolute; top: 2.5%; left: 39%; }
+    .skyblue_portion{ position: absolute; top: 12%; left: 43%; }
 
     /* blue portion */
-    .blue_portion{ position: absolute; bottom: 43.8%; left: 29.5%; }
+    .blue_portion{ position: absolute; top: 30%; left: 33.5%; }
 
     /* green portion */
-    .green_portion{ position: absolute; bottom: 44.2%; left: 40.5%; }
+    .green_portion{ position: absolute; top: 30%; left: 45%; }
 
     /* deepgreen portion */
-    .deepgreen_portion{ position: absolute; bottom: 43.5%; right: 23.8%; }
+    .deepgreen_portion{ position: absolute; top: 30%; right: 28%; }
 
     /* purple portion */
-    .purple_portion{ position: absolute; top: 2.2%; left: 33.5%; }
+    .purple_portion{ position: absolute; top: 12%; left: 37.5%; }
 
     /* brown portion */
-    .brown_portion{ position: absolute; top: 2.3%; right: 30.5%; }
+    .brown_portion{ position: absolute; top: 12%; right: 35%; }
 
     /* white portion */
-    .white_portion{ position: absolute; top: 2.6%; left: 28.5%; }
+    .white_portion{ position: absolute; top: 12%; left: 32.5%; }
 
     /* black portion */
-    .black_portion{ position: absolute; bottom: 43.7%; left: 35%; }
+    .black_portion{ position: absolute; top: 30%; left: 39%; }
