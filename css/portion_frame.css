@@ -20,7 +20,7 @@ body
 
 /* portion position */
     /* pour_position */
-    .select_portion { position: absolute; bottom: 50%; right: 50%; }
+    .select_portion { position: absolute; top: 27%; right: 30%; }
 
     /* red portion */
     .red_portion{ position: absolute; top: 2.8%; right: 36.5%; }

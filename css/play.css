@@ -18,20 +18,7 @@ body
     }
 
 
-/* text */
-/*.text_setting
-    {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14pt;
-        font-style: unset;
-         line-height: 1.6em; 
-        /* text-align: center; 
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate( -50%, -50% ); 
-    } */
+/* text - 수정 필요 */
 .howtoplay_text
     {
         font-family: 'Open Sans', sans-serif;
@@ -51,11 +38,19 @@ body
         right: 29%;
     }
 
+
 .cauldron 
     {
         position: absolute;
         bottom: 0%;
         right: 21%;
+    }
+
+.cauldron_change 
+    {
+        position: absolute;
+        bottom: 0%;
+        right: 19%;
     }
 
 
