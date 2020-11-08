@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title>play</title>
         <link rel="stylesheet" type="text/css"  href="css/play.css">
+        <link rel="stylesheet" type="text/css"  href="css/portion_frame.css">
         <script src="js/play.js"></script> 
     </head>
     <body>
@@ -24,33 +25,65 @@
 
         <!--
         1) 이미지마다 위치 잡아주기 (포션, 항아리, 두루마리, 보따리)
-        2) 영어로 두루마리 위에는 How to Play / 보따리 위에는 RESET 적어놓기
+        2) 영어로 두루마리 위에는 How to Play / 보따리 위에는 RESET 적어놓기    clear
         3) 포션 클릭하면 항아리 바로 위에 pour한 포션 띄우기(각 색에 맞게 만약 yellow 포션을 눌렀다! -> yellow 포션 pour 보여줌)
         4) 3번 기능과 동시에 오른쪽 위에 현재 포션 현황을 보여주기(사용한 포션)
         5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
         6) 현재 포션 현황에 있는 포션을 카운트를 매겨 카운트를 조합해 결과창 나오게 하기(팝업으로)
+        7) 리셋버튼 누르면 포션현황, 항아리, 카운트 초기화!
         -->
 
         <div class="wrap">
             <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
 
-            <div class="portion">
-
+            <div class="red_portion">
+                <img src="image/icon/Red_bottle.png" style="width: 130px; height: 170px;">
             </div>
+            <div class="yellow_portion">
+                <img src="image/icon/Yellow_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="skyblue_portion">
+                <img src="image/icon/skyBlue_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="blue_portion">
+                <img src="image/icon/Blue_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="green_portion">
+                <img src="image/icon/Green_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="deepgreen_portion">
+                <img src="image/icon/deepGreen_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="purple_portion">
+                <img src="image/icon/Purple_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="brown_portion">
+                <img src="image/icon/Brown_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="white_portion">
+                <img src="image/icon/White_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+            <div class="black_portion">
+                <img src="image/icon/Black_bottle.png" style="width: 130px; height: 170px;">
+            </div>
+
+
             <div class="select_portion">
-
+                <!-- <img src="image/icon/Red_bottle_pour.png" style="width: 450px; height: 320px;"> -->
             </div>
+
+
             <div class="cauldron">
-                <img src="image/icon/Cauldron.png" style="width: 450px; height: 320px;">
+                <img src="image/icon/Cauldron.png" style="width: 560px; height: 340px;">
                 <!-- <img src="image/icon/Cauldron_change.png" style="width: 75px; height: 75px;">  -->
             </div>
             <div class="how_to_play">
                 <div class=howtoplay_text>HowToPlay</div>
-                <img src="image/icon/HowtoPlayBtn.png" style="width: 200px; height: 135px;">
+                <img src="image/icon/HowtoPlayBtn.png" style="width: 260px; height: 145px;">
             </div>
             <div class="reset">
                 <div class=reset_text>RESET</div>
-                <img src="image/icon/ResetBtn.png" style="width: 130px; height: 135px;">
+                <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
             </div>
         </div>
     </body>
