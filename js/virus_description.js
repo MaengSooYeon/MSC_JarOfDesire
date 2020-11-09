@@ -24,9 +24,9 @@ $(document).ready(function(){
         $("p.Nipha_index").slideDown();
         $("p").not("p.Nipha_index").hide();
     });
-    $("#Aids").click(function(){
-        $("p.Aids_index").slideDown();
-        $("p").not("p.Aids_index").hide();
+    $("#HIV").click(function(){
+        $("p.HIV_index").slideDown();
+        $("p").not("p.HIV_index").hide();
     });
     $("#Hendra").click(function(){
         $("p.Hendra_index").slideDown();
