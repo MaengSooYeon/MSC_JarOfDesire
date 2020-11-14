@@ -16,10 +16,6 @@ $(document).ready(function(){
         $("p.Sars_index").slideDown();
         $("p").not("p.Sars_index").hide();
     });
-    $("#Pest").click(function(){
-        $("p.Pest_index").slideDown();
-        $("p").not("p.Pest_index").hide();
-    });
     $("#Nipha").click(function(){
         $("p.Nipha_index").slideDown();
         $("p").not("p.Nipha_index").hide();
@@ -39,10 +35,6 @@ $(document).ready(function(){
     $("#Ebola").click(function(){
         $("p.Ebola_index").slideDown();
         $("p").not("p.Ebola_index").hide();
-    });
-    $("#SFTS").click(function(){
-        $("p.SFTS_index").slideDown();
-        $("p").not("p.SFTS_index").hide();
     });
 });
 }
