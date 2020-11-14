@@ -13,7 +13,6 @@ body
         height: 500px;
         margin:0 auto;
     }
-
 .container_box
     {
         position: absolute;
@@ -31,14 +30,14 @@ body
 }
 .start_button{
     position: fixed;
-    top:260;
+    top:300;
     left: 640;
     border: none;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
 .virus_button{
     position: fixed;
-    top:317;
+    top:367;
     left:638;
     border: none;
     background-color: hsla(0, 0%, 0%, 0.0);
