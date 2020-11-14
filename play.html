@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css"  href="css/play.css">
         <link rel="stylesheet" type="text/css"  href="css/portion_frame.css">
         <script src="js/play.js"></script> 
+        <script src="js/play_count.js"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
@@ -30,7 +31,7 @@
         3) 포션 클릭하면 항아리 바로 위에 pour한 포션 띄우기(각 색에 맞게 만약 yellow 포션을 눌렀다! -> yellow 포션 pour 보여줌) clear
         4) 3번 기능과 동시에 오른쪽 위에 현재 포션 현황을 보여주기(사용한 포션)
         5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
-        6) count 값이 들어오면(0이아니면) 항아리 바꾸기
+        6) count 값이 들어오면(0이아니면) 항아리 바꾸기     clear
         7) 현재 포션 현황에 있는 포션을 카운트를 매겨 카운트를 조합해 결과창 나오게 하기(팝업으로)
         8) 리셋버튼 누르면 포션현황, 항아리, 카운트 초기화!
         -->
@@ -38,34 +39,34 @@
         <div class="wrap">
             <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
 
-            <div class="red_portion">
+            <div class="red_portion" onclick="changeicon(1)">
                 <img src="image/icon/Red_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="yellow_portion">
+            <div class="yellow_portion" onclick="changeicon(1)">
                 <img src="image/icon/Yellow_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="skyblue_portion">
+            <div class="skyblue_portion" onclick="changeicon(1)">
                 <img src="image/icon/skyBlue_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="blue_portion">
+            <div class="blue_portion" onclick="changeicon(1)">
                 <img src="image/icon/Blue_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="green_portion">
+            <div class="green_portion" onclick="changeicon(1)">
                 <img src="image/icon/Green_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="deepgreen_portion">
+            <div class="deepgreen_portion" onclick="changeicon(1)">
                 <img src="image/icon/deepGreen_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="purple_portion">
+            <div class="purple_portion" onclick="changeicon(1)">
                 <img src="image/icon/Purple_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="brown_portion">
+            <div class="brown_portion" onclick="changeicon(1)">
                 <img src="image/icon/Brown_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="white_portion">
+            <div class="white_portion" onclick="changeicon(1)">
                 <img src="image/icon/White_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="black_portion">
+            <div class="black_portion" onclick="changeicon(1)">
                 <img src="image/icon/Black_bottle.png" style="width: 45px; height: 80px;">
             </div> 
 
