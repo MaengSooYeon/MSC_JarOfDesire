@@ -1,5 +1,5 @@
 /* 클릭한 포션에 따라 show/hide를 결정하는 함수 
-    portion_count 구분 
+    portion count 구분 
     1 → red portion
     2 → yellow portion
     3 → sky blue portion
