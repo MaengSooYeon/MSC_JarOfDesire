@@ -35,7 +35,7 @@
         5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
         6) count 값이 들어오면(0이아니면) 항아리 바꾸기     clear
         7) 현재 포션 현황에 있는 포션을 카운트를 매겨 카운트를 조합해 결과창 나오게 하기(팝업으로)
-        8) 리셋버튼 누르면 포션현황, 항아리, 카운트 초기화!
+        8) 리셋버튼 누르면 포션현황, 항아리, 카운트 초기화!     clear
         9) 포션 클릭하면 status 포션을 보여주는데 one two three를 나눠서 보여줘야됨
             -> one에 포션이 있으면(이미지가 있으면) two에 표시를 하는 조건문을 만들어야....
         10) 포션 클릭하면 pour 이미지 나오는거 그때 쪼르륵하는 효과음 있으면 좋겠다... 
@@ -141,7 +141,7 @@
                 <div class=howtoplay_text>HowToPlay</div>
                 <img src="image/icon/HowtoPlayBtn.png" style="width: 260px; height: 145px;">
             </div>
-            <div class="reset">
+            <div class="reset" onclick="show_hide(0)">
                 <div class=reset_text>RESET</div>
                 <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
             </div>

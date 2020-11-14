@@ -10,6 +10,7 @@
     8 → brown portion
     9 → white portion
     10 → black portion
+    0 → reset
 */
 function show_hide(portion_count){
     if(portion_count==1){
@@ -145,6 +146,19 @@ function show_hide(portion_count){
         $('#purple_portion_pour').hide();
         $('#brown_portion_pour').hide();
         $('#white_portion_pour').hide();
+
+    }else if(portion_count==0){
+        //현황도 지우기. 추가해야함
+        $('#red_portion_pour').hide();
+        $('#yellow_portion_pour').hide();
+        $('#skyblue_portion_pour').hide();
+        $('#blue_portion_pour').hide();
+        $('#green_portion_pour').hide();
+        $('#deepgreen_portion_pour').hide();
+        $('#purple_portion_pour').hide();
+        $('#brown_portion_pour').hide();
+        $('#white_portion_pour').hide();
+        $('#black_portion_pour').hide();
 
     }
 }

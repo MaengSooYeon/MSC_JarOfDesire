@@ -62,5 +62,12 @@ window.onload = function(){
             score_result(score);
             count_changeicon(count);
         });  
+        
+        $('.reset').bind('click', function fncSearch(){
+            count=0;  
+            score=0;
+            score_result(score);
+            count_changeicon(count);
+        });  
     });
 }
