@@ -144,7 +144,6 @@ function show_hide(portion_count){
         $('#white_portion_pour').hide();
 
     }else if(portion_count==0){
-        //현황도 지우기. 추가해야함
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -156,5 +155,39 @@ function show_hide(portion_count){
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
+
+        /* 포션 현황에 남아있는 이미지 삭제 */
+        $('#status_red_portion_one').hide();
+        $('#status_yellow_portion_one').hide();
+        $('#status_skyblue_portion_one').hide();
+        $('#status_blue_portion_one').hide();
+        $('#status_green_portion_one').hide();
+        $('#status_deepgreen_portion_one').hide();
+        $('#status_purple_portion_one').hide();
+        $('#status_brown_portion_one').hide(); 
+        $('#status_white_portion_one').hide();
+        $('#status_black_portion_one').hide();
+
+        $('#status_red_portion_two').hide();
+        $('#status_yellow_portion_two').hide();
+        $('#status_skyblue_portion_two').hide();
+        $('#status_blue_portion_two').hide();
+        $('#status_green_portion_two').hide();
+        $('#status_deepgreen_portion_two').hide();
+        $('#status_purple_portion_two').hide();
+        $('#status_brown_portion_two').hide(); 
+        $('#status_white_portion_two').hide();
+        $('#status_black_portion_two').hide();
+
+        $('#status_red_portion_three').hide();
+        $('#status_yellow_portion_three').hide();
+        $('#status_skyblue_portion_three').hide();
+        $('#status_blue_portion_three').hide();
+        $('#status_green_portion_three').hide();
+        $('#status_deepgreen_portion_three').hide();
+        $('#status_purple_portion_three').hide();
+        $('#status_brown_portion_three').hide(); 
+        $('#status_white_portion_three').hide();
+        $('#status_black_portion_three').hide();
     }
 }
