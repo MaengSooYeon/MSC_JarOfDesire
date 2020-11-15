@@ -42,6 +42,7 @@
             왜 하나만 눌렀는데 3개가 뜨는거야 ㅜㅜ 그리고 나는 하나 누르면 하나만 뜨게하고싶은데 1 2 3 나눠서..
         13) wow 결과확인하러가는 버튼을 안만들었다..
            -> s1 s2 가 둘다 1이거나 s1 s2 s3가 다 1일때만 결과확인하러가는 버튼을 show 해주자
+        16) 결과 확인 버튼 눌렀을때 click count가 2이상일때만 넘어가게 하기 if문사용
 
         -- 시간이 되면 --
         10) 포션 클릭하면 pour 이미지 나오는거 그때 쪼르륵하는 효과음 있으면 좋겠다... 
@@ -54,13 +55,13 @@
             <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
 
             <!-- portion settings -->
-            <div class="red_portion" onclick="count_changeicon(1); show_hide(1)">
+            <div class="red_portion" onclick="show_hide(1); status_portion(1, 1)">
                 <img src="image/icon/Red_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="yellow_portion" onclick="count_changeicon(1); show_hide(2)">
+            <div class="yellow_portion" onclick="show_hide(2); status_portion(2, 1)">
                 <img src="image/icon/Yellow_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="skyblue_portion" onclick="count_changeicon(1); show_hide(3)">
+            <!-- <div class="skyblue_portion" onclick="count_changeicon(1); show_hide(3)">
                 <img src="image/icon/skyBlue_bottle.png" style="width: 45px; height: 80px;">
             </div>
             <div class="blue_portion" onclick="count_changeicon(1); show_hide(4)">
@@ -83,7 +84,7 @@
             </div>
             <div class="black_portion" onclick="count_changeicon(1); show_hide(10)">
                 <img src="image/icon/Black_bottle.png" style="width: 45px; height: 80px;">
-            </div> 
+            </div>  -->
 
 
             <!-- portion position - select portion -->
