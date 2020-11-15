@@ -25,10 +25,6 @@ function show_hide(portion_count){
         $('#brown_portion_pour').hide();
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
-        
-        // $('#status_red_portion_one').show();
-        // $('#status_red_portion_two').show();
-        // $('#status_red_portion_three').show();
 
     }else if(portion_count==2){
         $('#yellow_portion_pour').show();

@@ -1,4 +1,4 @@
-/* count에 따라 기능변경하는 함수 */
+/* count에 따라 기능제어하는 함수 */
 function count_changeicon(count){
     /* count가 4일때 포션 선택금지 */
     if(count>=4){

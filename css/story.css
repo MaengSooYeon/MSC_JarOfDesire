@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@font-face 
+    {
+        font-family: 'RIDIBatang';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
 /* 기본값 세팅 */
 *{margin: 0; padding: 0;}
 
@@ -14,12 +20,11 @@ body
 /* 스토리 내용 */
 .story_content
     {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'RIDIBatang';
         font-size: 14pt;
-        font-style: unset;
         line-height: 1.6em;
         text-align: center;
-
+        
         position: absolute;
         top: 50%;
         left: 50%;
