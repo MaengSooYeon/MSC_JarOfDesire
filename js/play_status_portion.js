@@ -27,11 +27,6 @@ function status_portion(portion_count, click_count){
         
     }
 
-    // if(click_count>=3){
-    //     alert(click_count+'넣을 수 있는 포션은 3개까지 입니다! 원하는 포션을 다 선택했다면 결과를 확인하러가볼까요?')
-    //     // return false;
-    // }
-
     /* count가 1이상일때 항아리 이미지 변화 */
     if(click_count>0){
         $('#cauldron_change').show();
