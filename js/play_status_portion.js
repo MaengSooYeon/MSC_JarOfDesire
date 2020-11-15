@@ -52,8 +52,7 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_one').hide();
             $('#status_white_portion_one').hide(); 
             $('#status_black_portion_one').hide();
-            // click_count++;
-            // alert(click_count);
+            click_count++;
             s1=1;
 
         }
@@ -69,139 +68,138 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_one').hide();
             $('#status_white_portion_one').hide(); 
             $('#status_black_portion_one').hide();
-            // click_count++;
-            // alert(click_count);
+            click_count++;
             s1=1;
 
         }
-        // if(portion_count==3){  
-        //     $('#status_skyblue_portion_one').show();
+        if(portion_count==3){  
+            $('#status_skyblue_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
             
-        // }
-        // if(portion_count==4){   
-        //     $('#status_blue_portion_one').show();
+        }
+        if(portion_count==4){   
+            $('#status_blue_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
 
-        // }
-        // if(portion_count==5){  
-        //     $('#status_green_portion_one').show();
+        }
+        if(portion_count==5){  
+            $('#status_green_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
 
-        // }
-        // if(portion_count==6){   
-        //     $('#status_deepgreen_portion_one').show();
+        }
+        if(portion_count==6){   
+            $('#status_deepgreen_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
             
-        // }
-        // if(portion_count==7){   
-        //     $('#status_purple_portion_one').show();
+        }
+        if(portion_count==7){   
+            $('#status_purple_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_brown_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_brown_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
 
-        // }
-        // if(portion_count==8){   
-        //     $('#status_brown_portion_one').show();
+        }
+        if(portion_count==8){   
+            $('#status_brown_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_white_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_white_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
             
-        // }
-        // if(portion_count==9){  
-        //     $('#status_white_portion_one').show();
+        }
+        if(portion_count==9){  
+            $('#status_white_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide(); 
-        //     $('#status_black_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide(); 
+            $('#status_black_portion_one').hide();
+            click_count++;
+            s1=1;
 
-        // }
-        // if(portion_count==10){  
-        //     $('#status_black_portion_one').show();
+        }
+        if(portion_count==10){  
+            $('#status_black_portion_one').show();
 
-        //     $('#status_red_portion_one').hide();
-        //     $('#status_yellow_portion_one').hide();
-        //     $('#status_skyblue_portion_one').hide();
-        //     $('#status_blue_portion_one').hide();
-        //     $('#status_green_portion_one').hide();
-        //     $('#status_deepgreen_portion_one').hide();
-        //     $('#status_purple_portion_one').hide();
-        //     $('#status_brown_portion_one').hide(); 
-        //     $('#status_white_portion_one').hide();
-        //     click_count=1;
-        //     s1=1;
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide(); 
+            $('#status_white_portion_one').hide();
+            click_count++;
+            s1=1;
 
-        // }
+        }
 
        
     } 
@@ -219,7 +217,7 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_two').hide();
             $('#status_white_portion_two').hide(); 
             $('#status_black_portion_two').hide();
-            // click_count=2;
+            click_count++;
             s2=1;
 
         }
@@ -235,138 +233,138 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_two').hide();
             $('#status_white_portion_two').hide(); 
             $('#status_black_portion_two').hide();
-            // click_count=2;
+            click_count++;
             s2=1;
 
         }
-        // if(portion_count==3){   
-        //     $('#status_skyblue_portion_two').show();
+        if(portion_count==3){   
+            $('#status_skyblue_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==4){   
-        //     $('#status_blue_portion_two').show();
+        }
+        if(portion_count==4){   
+            $('#status_blue_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==5){  
-        //     $('#status_green_portion_two').show();
+        }
+        if(portion_count==5){  
+            $('#status_green_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==6){  
-        //     $('#status_deepgreen_portion_two').show();
+        }
+        if(portion_count==6){  
+            $('#status_deepgreen_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==7){   
-        //     $('#status_purple_portion_two').show();
+        }
+        if(portion_count==7){   
+            $('#status_purple_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_brown_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_brown_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==8){   
-        //     $('#status_brown_portion_two').show();
+        }
+        if(portion_count==8){   
+            $('#status_brown_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_white_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_white_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==9){   
-        //     $('#status_white_portion_two').show();
+        }
+        if(portion_count==9){   
+            $('#status_white_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide(); 
-        //     $('#status_black_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide(); 
+            $('#status_black_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==10){   
-        //     $('#status_black_portion_two').show();
+        }
+        if(portion_count==10){   
+            $('#status_black_portion_two').show();
 
-        //     $('#status_red_portion_two').hide();
-        //     $('#status_yellow_portion_two').hide();
-        //     $('#status_skyblue_portion_two').hide();
-        //     $('#status_blue_portion_two').hide();
-        //     $('#status_green_portion_two').hide();
-        //     $('#status_deepgreen_portion_two').hide();
-        //     $('#status_purple_portion_two').hide();
-        //     $('#status_brown_portion_two').hide(); 
-        //     $('#status_white_portion_two').hide();
-        //     click_count=2;
-        //     s2=1;
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide(); 
+            $('#status_white_portion_two').hide();
+            click_count++;
+            s2=1;
 
-        // }
+        }
 
     }
     /* 세번째 */
@@ -383,7 +381,7 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_three').hide();
             $('#status_white_portion_three').hide(); 
             $('#status_black_portion_three').hide();
-            // click_count=3;
+            click_count++;
             s2=1;
 
         }
@@ -399,146 +397,138 @@ function status_portion(portion_count, click_count){
             $('#status_brown_portion_three').hide();
             $('#status_white_portion_three').hide(); 
             $('#status_black_portion_three').hide();
-            // click_count=3;
+            click_count++;
             s2=1;
 
         }
-        // if(portion_count==3){   
-        //     $('#status_skyblue_portion_three').show();
+        if(portion_count==3){   
+            $('#status_skyblue_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==4){   
-        //     $('#status_blue_portion_three').show();
+        }
+        if(portion_count==4){   
+            $('#status_blue_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==5){  
-        //     $('#status_green_portion_three').show();
+        }
+        if(portion_count==5){  
+            $('#status_green_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==6){  
-        //     $('#status_deepgreen_portion_three').show();
+        }
+        if(portion_count==6){  
+            $('#status_deepgreen_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==7){   
-        //     $('#status_purple_portion_three').show();
+        }
+        if(portion_count==7){   
+            $('#status_purple_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_brown_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_brown_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==8){   
-        //     $('#status_brown_portion_three').show();
+        }
+        if(portion_count==8){   
+            $('#status_brown_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_white_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_white_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==9){   
-        //     $('#status_white_portion_three').show();
+        }
+        if(portion_count==9){   
+            $('#status_white_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide(); 
-        //     $('#status_black_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide(); 
+            $('#status_black_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
-        // if(portion_count==10){   
-        //     $('#status_black_portion_three').show();
+        }
+        if(portion_count==10){   
+            $('#status_black_portion_three').show();
 
-        //     $('#status_red_portion_three').hide();
-        //     $('#status_yellow_portion_three').hide();
-        //     $('#status_skyblue_portion_three').hide();
-        //     $('#status_blue_portion_three').hide();
-        //     $('#status_green_portion_three').hide();
-        //     $('#status_deepgreen_portion_three').hide();
-        //     $('#status_purple_portion_three').hide();
-        //     $('#status_brown_portion_three').hide(); 
-        //     $('#status_white_portion_three').hide();
-        //     click_count=3;
-        //     s2=1;
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide(); 
+            $('#status_white_portion_three').hide();
+            click_count++;
+            s2=1;
 
-        // }
+        }
         
     }
 }
-
-// function status_portion_s2(s2){
-
-// }
-
-// function status_portion_s3(s3){
-
-// }
