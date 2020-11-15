@@ -1,6 +1,12 @@
 /* 기본값 세팅 */
 *{margin: 0; padding: 0;}
-
+@font-face 
+    {
+        font-family: 'RIDIBatang';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
 body
     {
         position: absolute; left: 50%; top: 50%; 
@@ -18,24 +24,39 @@ body
     }
 
 
-/* text - 수정 필요 */
-.howtoplay_text
+.status_text
     {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16pt; 
+        font-family: 'RIDIBatang';
+        font-size: 14pt; 
 
         position: absolute;
-        bottom: 30%;
-        left: 32%;
+        top: 1%;
+        right: 1.7%;
+    }
+
+.howtoplay_text
+    {
+        font-family: 'RIDIBatang';
+        font-size: 16pt; 
+        background-color: lavenderblush;
+        border-radius: 3mm;
+        padding: 0.5mm;
+
+        position: absolute;
+        bottom: 37%;
+        left: 35%;
     }
 .reset_text
     {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'RIDIBatang';
         font-size: 16pt;
+        background-color: lavenderblush;
+        border-radius: 3mm;
+        padding: 1mm;
 
         position: absolute;
         bottom: 28%;
-        right: 29%;
+        right: 31%;
     }
 
 
