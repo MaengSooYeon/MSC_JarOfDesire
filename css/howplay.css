@@ -1,5 +1,11 @@
-.popBtn{
+.popBtn {
     display: block;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
 }
 .howplay{
     position: absolute; 
@@ -44,6 +50,25 @@
     background: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
-    opacity: 0;
-    transition: all 0.5s;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff4e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -225px;
+    border: 5px solid rgb(105, 86, 70);
+    line-height: 2.8em;
+    border-radius: 10%;
+    width: 500px;
+    height: 280px;
 }
