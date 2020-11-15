@@ -51,6 +51,7 @@ body
 }
 .howplay{
     position: absolute; 
+    visibility: hidden;
     left: 50%; 
     top:50%;
     /* 레이아웃 순서 배정 */
