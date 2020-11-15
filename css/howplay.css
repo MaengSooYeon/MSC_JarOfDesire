@@ -16,7 +16,21 @@
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-content-main {
+    background-color: #fff4e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -225px;
+    border: 5px solid rgb(105, 86, 70);
+    line-height: 2.8em;
+    border-radius: 10%;
+    width: 600px;
+    height: 320px;
+}
+
+.modal-content-play {
     background-color: #fff4e3;
     position: absolute;
     top: 50%;
