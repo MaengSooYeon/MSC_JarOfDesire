@@ -52,11 +52,21 @@ body
         left: 50.7%;
         transform: translate( -50%, -50% );
     }
+.result_text_contents_2
+    {
+        font-family: 'RIDIBatang';
+        font-size: 11pt;
+        text-align: center;
+        
+        position: absolute;
+        bottom: 18.5%;
+        right: 34%;
+    }
 
 /* button settings */
-/* .btn 
-{
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
-} */
+.LearnMoreBtn 
+    {
+        position: absolute;
+        bottom: 18%;
+        right: 30%;
+    }
