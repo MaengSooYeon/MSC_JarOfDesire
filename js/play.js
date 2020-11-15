@@ -90,6 +90,40 @@ window.onload = function(){
             score=0;
             score_result(score);
             count_changeicon(count);
+
+            
+            $('#status_red_portion_one').hide();
+            $('#status_yellow_portion_one').hide();
+            $('#status_skyblue_portion_one').hide();
+            $('#status_blue_portion_one').hide();
+            $('#status_green_portion_one').hide();
+            $('#status_deepgreen_portion_one').hide();
+            $('#status_purple_portion_one').hide();
+            $('#status_brown_portion_one').hide(); 
+            $('#status_white_portion_one').hide();
+            $('#status_black_portion_one').hide();
+
+            $('#status_red_portion_two').hide();
+            $('#status_yellow_portion_two').hide();
+            $('#status_skyblue_portion_two').hide();
+            $('#status_blue_portion_two').hide();
+            $('#status_green_portion_two').hide();
+            $('#status_deepgreen_portion_two').hide();
+            $('#status_purple_portion_two').hide();
+            $('#status_brown_portion_two').hide(); 
+            $('#status_white_portion_two').hide();
+            $('#status_black_portion_two').hide();
+
+            $('#status_red_portion_three').hide();
+            $('#status_yellow_portion_three').hide();
+            $('#status_skyblue_portion_three').hide();
+            $('#status_blue_portion_three').hide();
+            $('#status_green_portion_three').hide();
+            $('#status_deepgreen_portion_three').hide();
+            $('#status_purple_portion_three').hide();
+            $('#status_brown_portion_three').hide(); 
+            $('#status_white_portion_three').hide();
+            $('#status_black_portion_three').hide();
         });  
     });
 }
