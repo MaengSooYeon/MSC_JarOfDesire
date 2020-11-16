@@ -7,6 +7,14 @@ function count_changeicon(count){
         // return false;
         
     }
+    /* count가 2이상일때 결과확인 */
+    // if(count>=2){
+    //     // $('.result_btn').bind('click', function fncSearch(){
+    //     //     $(location).attr('href','play.html');
+    //     // });
+    // }else if(count<2){
+    //     alert('결과는 포션을 2개 이상 선택해야지만 확인할 수 있습니다!');
+    // }
     
     /* count가 1이상일때 항아리 이미지 변화 */
     if(count>0){
