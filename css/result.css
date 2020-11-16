@@ -1,5 +1,5 @@
+/* default settings */
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face 
     {
         font-family: 'RIDIBatang';
@@ -8,7 +8,6 @@
         font-style: normal;
     }
     
-/* 기본값 세팅 */
 *{margin: 0; padding: 0;}
 
 body
@@ -53,6 +52,7 @@ body
         left: 50.7%;
         transform: translate( -50%, -50% );
     }
+
 .result_text_contents_2
     {
         font-family: 'RIDIBatang';

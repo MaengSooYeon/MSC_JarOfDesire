@@ -1,5 +1,4 @@
-/* 기본값 세팅 */
-*{margin: 0; padding: 0;}
+/* default settings */
 @font-face 
     {
         font-family: 'RIDIBatang';
@@ -7,6 +6,9 @@
         font-weight: normal;
         font-style: normal;
     }
+
+*{margin: 0; padding: 0;}
+
 body
     {
         position: absolute; left: 50%; top: 50%; 
@@ -24,7 +26,7 @@ body
     }
 
 
-/* contents settings */
+/* contents & item settings */
 .status_text
     {
         font-family: 'RIDIBatang';
