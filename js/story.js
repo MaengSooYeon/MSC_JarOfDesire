@@ -1,3 +1,4 @@
+/* 버튼을 클릭할 때마다 지정된 텍스트값으로 변경 */
 window.onload = function(){
     $(document).ready(function(){
         var count = 0; 
