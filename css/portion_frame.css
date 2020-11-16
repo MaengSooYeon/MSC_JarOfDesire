@@ -22,11 +22,6 @@ body
     /* pour position */
     .select_portion { position: absolute; bottom: 27%; right: 33%; }
 
-    /* status position */
-    .status_portion_one { position: absolute; top: 8%; right: 17.5%; }
-    .status_portion_two { position: absolute; top: 8%; right: 10.4%; }
-    .status_portion_three { position: absolute; top: 8%; right: 3.2%; }
-
     /* red portion */
     .red_portion{ position: absolute; top: 12%; right: 40.5%; }
 
