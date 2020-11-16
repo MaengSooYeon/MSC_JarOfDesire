@@ -4,34 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>시작화면</title>
-    <link rel="stylesheet" type="text/css" href="css/start.css">
+    <link rel="stylesheet" type="text/css" href="css/start.css"> <!--시작 페이지 css파일-->
     <script src="js/howplay.js"></script>               <!-- 게임설명 js 파일 -->
     <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
     <body>
         <!-- select item audio -->
-        <audio id="bubble" src="audio/select_sound.mp3"></audio>
+        <audio id="bubble" src="audio/select_sound.mp3"></audio><!--선택시 나오는 효과음-->
 
-        <div class="wrap">
-            <div class="container">
-                <div class="container_box">
-                    <a onclick="ShowPopup(); select_sound()">
-                        <img src="image/icon/game_report.png" width="220" height="110" class="import_button">
+        <div class="wrap"> <!--container-->
+                    <a onclick="ShowModal(); select_sound()"> <!--howplay.js의 ShowModal 함수 호출기, select_sound()로 효과음-->
+                        <img src="image/icon/game_report.png" width="220" height="110" class="import_button"> <!--start.css의 import_button으로 버튼 위치 조정-->
                     </a>
-                    <a href="story.html">
-                        <img src="image/icon/game_start.png" width="230" height="68" class="start_button">
+                    <a onclick="location.href='story.html'">
+                        <img src="image/icon/game_start.png" width="230" height="68" class="start_button"> <!--start.css의 start_button으로 버튼 위치 조정-->
                     </a>
-                    <div onclick="location.href='virus_description.html'">
-                        <img src="image/icon/virus_import.png" width="237" height="65" class="virus_button">
-                    </div>
-                </div>
-                <img src="image/screen/main.png" style="width: 960px; height: 480px;">
-            </div>
-        </div>
-        <div class="modal" id="popup">
-            <div class="modal-content-play">
-                <img src="image/icon/close.png" width="20" height="20" style="clear: both; margin-right:30px; margin-top:20px" align="right" onclick="HidePouup()">
+                    <a onclick="location.href='virus_description.html'">
+                        <img src="image/icon/virus_import.png" width="237" height="65" class="virus_button"> <!--start.css의 virus_button으로 버튼 위치 조정-->
+                    </a>
+                <img src="image/screen/main.png" style="width: 960px; height: 480px;"> <!--container 배경사진-->
+            </div><!--wrap 클래스 close-->
+        <div class="modal" id="modal_id"><!--start.css의 modal 적용, howplay.js에서 게임 설명 창 열고 닫고 할 수 있는 id지정-->
+            <div class="modal-content-play"><!--start.css의 modal-content-play 적용, 게임 설명 창 안의 css-->
+                <img src="image/icon/close.png" width="20" height="20" style="clear: both; margin-right:30px; margin-top:20px" align="right" onclick="HideModal()">
+                <!--열고 닫고 할 수 있는 닫기 버튼 이미지 각 위, 오른쪽 마진 부여, 오른쪽에 있도록 설정, 클릭하면 howplay.js의 HidModal 함수 호출되어 닫히기-->
                 <br>선반에 올려진 <img src="image/icon/modal icon.png" style="width: 35px; height: 52px;"> 들을 3개 클릭해 바이러스를 조합합니다.
                 <br>그리고 리셋 버튼을 눌러 포션을 다시 조합할 수 있습니다!
                 <br>🦠즐거운 게임하세요🦠
