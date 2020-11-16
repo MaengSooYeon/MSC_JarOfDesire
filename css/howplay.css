@@ -1,9 +1,8 @@
+/*css코드가 섞이지 않기 위해 따로 분리한 play.html 전용 css파일. */
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
-.popBtn {
-    display: block;
-}
 
+/*modal 전체 레이아웃*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

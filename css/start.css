@@ -13,21 +13,13 @@ body {
     text-align: center;
     background: white;
 }
-
+/*container*/
 .wrap {
     width: 100%;
     height: 100%;
     margin: 0 auto;
 }
-
-.container_box {
-    position: absolute;
-    width: 960px;
-    height: 480px;
-    margin: 0 auto;
-    display: inline-block;
-}
-
+/*게임 설명 버튼*/
 .import_button {
     position: fixed;
     top: 305px;
@@ -36,7 +28,7 @@ body {
     z-index: 1;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
-
+/*게임 시작 버튼*/
 .start_button {
     position: fixed;
     top: 300px;
@@ -45,7 +37,7 @@ body {
     z-index: 1;
     background-color: hsla(0, 0%, 0%, 0.0);
 }
-
+/*바이러스 설명 버튼*/
 .virus_button {
     position: fixed;
     top: 367px;
@@ -55,10 +47,7 @@ body {
     background-color: hsla(0, 0%, 0%, 0.0);
 }
 
-.popBtn {
-    display: block;
-}
-
+/*Modal 전체 레이아웃*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
