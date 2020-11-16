@@ -15,6 +15,7 @@
 function show_hide(portion_count){
     if(portion_count==1){
         $('#red_portion_pour').show();
+        $('#red_portion_shining').show();
 
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -28,6 +29,7 @@ function show_hide(portion_count){
 
     }else if(portion_count==2){
         $('#yellow_portion_pour').show();
+        $('#yellow_portion_shining').show();
 
         $('#red_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -40,8 +42,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==3){
-
         $('#skyblue_portion_pour').show();
+        $('#skyblue_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#blue_portion_pour').hide();
@@ -53,8 +56,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
         
     }else if(portion_count==4){
-    
         $('#blue_portion_pour').show();
+        $('#blue_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -66,8 +70,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==5){
-        
         $('#green_portion_pour').show();
+        $('#green_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -79,8 +84,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==6){
-        
         $('#deepgreen_portion_pour').show();
+        $('#deepgreen_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -92,8 +98,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==7){
-        
         $('#purple_portion_pour').show();
+        $('#purple_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -105,8 +112,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==8){
-        
         $('#brown_portion_pour').show();
+        $('#brown_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -118,8 +126,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==9){
-        
         $('#white_portion_pour').show();
+        $('#white_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -131,8 +140,9 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
     }else if(portion_count==10){
-        
         $('#black_portion_pour').show();
+        $('#black_portion_shining').show();
+
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -156,38 +166,16 @@ function show_hide(portion_count){
         $('#black_portion_pour').hide();
 
 
-        /* 포션 현황에 남아있는 이미지 삭제 */
-        $('#status_red_portion_one').hide();
-        $('#status_yellow_portion_one').hide();
-        $('#status_skyblue_portion_one').hide();
-        $('#status_blue_portion_one').hide();
-        $('#status_green_portion_one').hide();
-        $('#status_deepgreen_portion_one').hide();
-        $('#status_purple_portion_one').hide();
-        $('#status_brown_portion_one').hide(); 
-        $('#status_white_portion_one').hide();
-        $('#status_black_portion_one').hide();
-
-        $('#status_red_portion_two').hide();
-        $('#status_yellow_portion_two').hide();
-        $('#status_skyblue_portion_two').hide();
-        $('#status_blue_portion_two').hide();
-        $('#status_green_portion_two').hide();
-        $('#status_deepgreen_portion_two').hide();
-        $('#status_purple_portion_two').hide();
-        $('#status_brown_portion_two').hide(); 
-        $('#status_white_portion_two').hide();
-        $('#status_black_portion_two').hide();
-
-        $('#status_red_portion_three').hide();
-        $('#status_yellow_portion_three').hide();
-        $('#status_skyblue_portion_three').hide();
-        $('#status_blue_portion_three').hide();
-        $('#status_green_portion_three').hide();
-        $('#status_deepgreen_portion_three').hide();
-        $('#status_purple_portion_three').hide();
-        $('#status_brown_portion_three').hide(); 
-        $('#status_white_portion_three').hide();
-        $('#status_black_portion_three').hide();
+        /* 선택된 포션을 보여주는 shining 이미지 삭제 */
+        $('#red_portion_shining').hide();
+        $('#yellow_portion_shining').hide();
+        $('#skyblue_portion_shining').hide();
+        $('#blue_portion_shining').hide();
+        $('#green_portion_shining').hide();
+        $('#deepgreen_portion_shining').hide();
+        $('#purple_portion_shining').hide();
+        $('#brown_portion_shining').hide();
+        $('#white_portion_shining').hide();
+        $('#black_portion_shining').hide();
     }
 }

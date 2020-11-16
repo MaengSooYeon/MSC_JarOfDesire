@@ -57,31 +57,31 @@ body
 
     /* shining position */
     /* red portion */
-    .red_portion_shining{ position: absolute; top: 12%; right: 40.5%; }
+    .red_portion_shining{ position: absolute; top: 11%; right: 40.2%; }
 
     /* yellow portion */
-    .yellow_portion_shining{ position: absolute; top: 30%; right: 34%; }
+    .yellow_portion_shining{ position: absolute; top: 29%; right: 33.7%; }
 
     /* skyblue portion */
-    .skyblue_portion_shining{ position: absolute; top: 12%; left: 43%; }
+    .skyblue_portion_shining{ position: absolute; top: 11%; left: 42.7%; }
 
     /* blue portion */
-    .blue_portion_shining{ position: absolute; top: 30%; left: 33.5%; }
+    .blue_portion_shining{ position: absolute; top: 29%; left: 33.2%; }
 
     /* green portion */
-    .green_portion_shining{ position: absolute; top: 30%; left: 45%; }
+    .green_portion_shining{ position: absolute; top: 29%; left: 44.7%; }
 
     /* deepgreen portion */
-    .deepgreen_portion_shining{ position: absolute; top: 30%; right: 28%; }
+    .deepgreen_portion_shining{ position: absolute; top: 29%; right: 27.7%; }
 
     /* purple portion */
-    .purple_portion_shining{ position: absolute; top: 12%; left: 37.5%; }
+    .purple_portion_shining{ position: absolute; top: 11%; left: 37.2%; }
 
     /* brown portion */
-    .brown_portion_shining{ position: absolute; top: 12%; right: 35%; }
+    .brown_portion_shining{ position: absolute; top: 11%; right: 34.7%; }
 
     /* white portion */
-    .white_portion_shining{ position: absolute; top: 12%; left: 32.5%; }
+    .white_portion_shining{ position: absolute; top: 11%; left: 32.2%; }
 
     /* black portion */
-    .black_portion_shining{ position: absolute; top: 30%; left: 39%; }
+    .black_portion_shining{ position: absolute; top: 29%; left: 38.7%; }
