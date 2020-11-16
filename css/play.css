@@ -54,6 +54,22 @@ body
         right: 33%;
     }
 
+.result_btn 
+    {
+        position: absolute;
+        top: 30%;
+        right: 2%;
+    }
+
+.result_btn_text
+    {
+        font-family: 'RIDIBatang';
+        font-size: 16pt;
+
+        position: absolute;
+        top: 27%;
+        right: 25%;
+    }
 
 .cauldron 
     {
