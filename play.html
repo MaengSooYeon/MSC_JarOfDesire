@@ -20,6 +20,7 @@
         <!-- select item audio -->
         <audio id="bubble" src="audio/select_sound.mp3"></audio>
         <audio id="water" src="audio/water_flow.mp3"></audio>
+        <audio id="result" src="audio/result_sound.mp3"></audio>
 
         <!--
         5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
@@ -114,7 +115,7 @@
             
             
             <!-- item position -->
-            <div class="result_btn">
+            <div class="result_btn" onclick="result_sound()">
                 <img id=result_btn src="image/icon/result_btn.png" style="width: 140px; height: 50px;">
                 <div class=result_btn_text>결과확인</div>
             </div>
