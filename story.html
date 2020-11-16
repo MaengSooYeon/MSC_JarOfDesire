@@ -3,12 +3,19 @@
         <meta charset="utf-8">
         <title>story</title>
         <link rel="stylesheet" type="text/css"  href="css/story.css"> 
-        <script src="js/story.js"></script> 
+        <script src="js/story.js"></script>                 <!-- 기본 js 파일 -->
+        <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <!-- select item audio -->
+        <audio id="bubble" src="audio/select_sound.mp3"></audio>
+
         <div class="wrap">
-            <div class="next_story_btn">
+            <!-- background image -->
+            <img src="image/screen/story_screen.png" style="width: 960px; height: 480px;">
+            
+            <div class="next_story_btn" onclick="select_sound()">
                 <img src="image/icon/next_story_btn.png" style="width: 75px; height: 75px;">
             </div>
             <div class="story_content">
@@ -17,7 +24,6 @@
                 <p class="t3"></p>
                 <p class="t4"></p></p>
             </div>
-            <img src="image/screen/story_screen.png" style="width: 960px; height: 480px;">
         </div>
     </body>
 </html>

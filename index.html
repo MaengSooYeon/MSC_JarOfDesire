@@ -5,22 +5,26 @@
     <meta charset="utf-8">
     <title>시작화면</title>
     <link rel="stylesheet" type="text/css" href="css/start.css">
-    <script src="js/howplay.js"></script>
+    <script src="js/howplay.js"></script>               <!-- 게임설명 js 파일 -->
+    <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
     <body>
+        <!-- select item audio -->
+        <audio id="bubble" src="audio/select_sound.mp3"></audio>
+
         <div class="wrap">
             <div class="container">
                 <div class="container_box">
-                    <a onclick="ShowPopup()">
+                    <a onclick="ShowPopup(); select_sound()">
                         <img src="image/icon/game_report.png" width="220" height="110" class="import_button">
                     </a>
                     <a href="story.html">
                         <img src="image/icon/game_start.png" width="230" height="68" class="start_button">
                     </a>
-                    <a href="virus_description.html">
+                    <div onclick="location.href='virus_description.html'">
                         <img src="image/icon/virus_import.png" width="237" height="65" class="virus_button">
-                    </a>
+                    </div>
                 </div>
                 <img src="image/screen/main.png" style="width: 960px; height: 480px;">
             </div>

@@ -5,10 +5,10 @@
         <link rel="stylesheet" type="text/css"  href="css/play.css">
         <link rel="stylesheet" type="text/css" href="css/howplay.css">
         <link rel="stylesheet" type="text/css"  href="css/portion_frame.css">
-        <script src="js/play.js"></script>                  <!-- 기본 js 파일 -->
-        <script src="js/howplay.js"></script>
-        <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
 
+        <script src="js/play.js"></script>                  <!-- 기본 js 파일 -->
+        <script src="js/howplay.js"></script>               <!-- 게임설명 js 파일 -->
+        <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
@@ -17,16 +17,6 @@
         <audio id="water" src="audio/water_flow.mp3"></audio>
         <audio id="result" src="audio/result_sound.mp3"></audio>
 
-        <!--
-        5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기) -> 재연
-        16) 결과 확인 버튼 눌렀을때 count가 2이상일때만 넘어가게 하기 if문사용 play_count.js에 수정
-          -> 제이쿼리 써서 버튼 클릭이 되면 count 판별. -> 재연
-
-        내가할일 !!
-        19) 결과 확인 버튼 사운드 지우고 결과창 넘어가면 사운드 들리게하기
-        15) 화면별 오디오 추가 (아마 자동재생이 크롬에서 막혀서.. 플레이(사운드)바를 만들어서 클릭하면 들려주게)
-        20) 도메인 관리하기
-        -->
 
         <div class="wrap">
             <!-- background image -->
@@ -133,6 +123,12 @@
                 <div class=reset_text>초기화</div>
                 <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
             </div>
+            
+            <div class="textBox1"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
+            <div class="HomeBtnText" onclick="location.href='index.html'"> 홈으로 가기</div>
+
+            <div class="textBox2"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
+            <div class="StoryBtnText" onclick="location.href='story.html'"> 다시 스토리 보러가기</div>
         </div>
 
         <!-- HowToPlay contents -->

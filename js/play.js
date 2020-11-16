@@ -210,6 +210,18 @@ function View_Result() {
         $('#white_portion_shining').hide();
         $('#black_portion_shining').hide();
     } else {
+        /* 기본 portion score 구분 
+            1 → red portion
+            2 → yellow portion
+            3 → sky blue portion
+            4 → blue portion
+            5 → green portion
+            6 → Deep green portion
+            7 → purple portion
+            8 → brown portion
+            9 → white portion
+            10 → black portion  */
+
         if(score >= 0 && score <=2){
             $(location).attr('href','result_1.html');
         }
