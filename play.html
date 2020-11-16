@@ -12,20 +12,20 @@
         <script src="js/play_portion.js"></script>          <!-- 포션 show/hide 판단하는 js 파일 -->
         <!-- <script src="js/play_status_portion.js"></script>   현재 포션현황 보여주는 js 파일 -->
         <script src="js/play_score_result.js"></script>     <!-- 점수 계산하는 js 파일 -->
+        <script src="js/sound.js"></script>                 <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <!-- select item audio -->
+        <audio id="bubble" src="audio/select_sound.mp3"></audio>
+        <audio id="water" src="audio/water_flow.mp3"></audio>
 
         <!--
         5) 포션을 3개 클릭하면 더 이상 클릭 못하게 막기(이벤트 막기)
-        17) 포션 현황을 포션 선택시 효과로(호버든 뭐든..) 하기로 했다. (포션 현황 XX)
         16) 결과 확인 버튼 눌렀을때 count가 2이상일때만 넘어가게 하기 if문사용 play_count.js에 수정
-        22) 결과창 사진 스크롤바 없게 줄이기
 
         -- 시간이 되면 --
-        10) 포션 클릭하면 pour 이미지 나오는거 그때 쪼르륵하는 효과음 있으면 좋겠다... 
-        11) 포션 이미지에 마우스 올리면 호버?느낌 주면 좋을듯 -> 17번
         15) 화면별 오디오 추가
         -->
 
@@ -34,34 +34,34 @@
             <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
 
             <!-- portion settings -->
-            <div class="red_portion" onclick="show_hide(1); count_changeicon(1)">
+            <div class="red_portion" onclick="show_hide(1); count_changeicon(1); water_flow()">
                 <img src="image/icon/Red_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="yellow_portion" onclick="show_hide(2); count_changeicon(1)">
+            <div class="yellow_portion" onclick="show_hide(2); count_changeicon(1); water_flow()">
                 <img src="image/icon/Yellow_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="skyblue_portion" onclick="show_hide(3); count_changeicon(1)">
+            <div class="skyblue_portion" onclick="show_hide(3); count_changeicon(1); water_flow()">
                 <img src="image/icon/skyBlue_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="blue_portion" onclick="show_hide(4); count_changeicon(1)">
+            <div class="blue_portion" onclick="show_hide(4); count_changeicon(1); water_flow()">
                 <img src="image/icon/Blue_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="green_portion" onclick="show_hide(5); count_changeicon(1)">
+            <div class="green_portion" onclick="show_hide(5); count_changeicon(1); water_flow()">
                 <img src="image/icon/Green_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="deepgreen_portion" onclick="show_hide(6); count_changeicon(1)">
+            <div class="deepgreen_portion" onclick="show_hide(6); count_changeicon(1); water_flow()">
                 <img src="image/icon/deepGreen_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="purple_portion" onclick="show_hide(7); count_changeicon(1)">
+            <div class="purple_portion" onclick="show_hide(7); count_changeicon(1); water_flow()">
                 <img src="image/icon/Purple_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="brown_portion" onclick="show_hide(8); count_changeicon(1)">
+            <div class="brown_portion" onclick="show_hide(8); count_changeicon(1); water_flow()">
                 <img src="image/icon/Brown_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="white_portion" onclick="show_hide(9); count_changeicon(1)">
+            <div class="white_portion" onclick="show_hide(9); count_changeicon(1); water_flow()">
                 <img src="image/icon/White_bottle.png" style="width: 45px; height: 80px;">
             </div>
-            <div class="black_portion" onclick="show_hide(10); count_changeicon(1)">
+            <div class="black_portion" onclick="show_hide(10); count_changeicon(1); water_flow()">
                 <img src="image/icon/Black_bottle.png" style="width: 45px; height: 80px;">
             </div> 
 
@@ -126,11 +126,11 @@
                 <img id=cauldron_change src="image/icon/Cauldron_change.png" style="width: 540px; height: 300px; display: none;"> 
             </div>
 
-            <div class="how_to_play" onclick="ShowPopup()">
+            <div class="how_to_play" onclick="ShowPopup(); select_sound()">
                 <div class=howtoplay_text>게임방법</div>
                 <img src="image/icon/HowtoPlayBtn.png" style="width: 260px; height: 145px;"></a>
             </div>
-            <div class="reset" onclick="show_hide(0)">
+            <div class="reset" onclick="show_hide(0); select_sound()">
                 <div class=reset_text>초기화</div>
                 <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
             </div>
