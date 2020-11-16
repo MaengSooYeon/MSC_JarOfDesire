@@ -150,6 +150,9 @@ function ShowHidePortion(portion_count) {
 }
 
 function test() {
+    $('#cauldron').show();
+    $('#cauldron_change').hide();
+
     $('#red_portion_pour').hide();
     $('#yellow_portion_pour').hide();
     $('#skyblue_portion_pour').hide();
@@ -174,9 +177,6 @@ function test() {
     $('#black_portion_shining').hide();
 
     total_cnt = 0;
-
-    $('#cauldron').show();
-    $('#cauldron_change').hide();
 }
 
 function View_Result() {
@@ -184,6 +184,31 @@ function View_Result() {
         alert("포션 3개를 선택해주세요!");
         total_cnt = 0;
         score = 0;
+        $('#cauldron').show();
+        $('#cauldron_change').hide();
+        
+        $('#red_portion_pour').hide();
+        $('#yellow_portion_pour').hide();
+        $('#skyblue_portion_pour').hide();
+        $('#blue_portion_pour').hide();
+        $('#green_portion_pour').hide();
+        $('#deepgreen_portion_pour').hide();
+        $('#purple_portion_pour').hide();
+        $('#brown_portion_pour').hide();
+        $('#white_portion_pour').hide();
+        $('#black_portion_pour').hide();
+    
+        /* 선택된 포션을 보여주는 shining 이미지 삭제 */
+        $('#red_portion_shining').hide();
+        $('#yellow_portion_shining').hide();
+        $('#skyblue_portion_shining').hide();
+        $('#blue_portion_shining').hide();
+        $('#green_portion_shining').hide();
+        $('#deepgreen_portion_shining').hide();
+        $('#purple_portion_shining').hide();
+        $('#brown_portion_shining').hide();
+        $('#white_portion_shining').hide();
+        $('#black_portion_shining').hide();
     } else {
         if(score >= 0 && score <=2){
             $(location).attr('href','result_1.html');
