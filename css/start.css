@@ -1,51 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+/* default settings */
+@font-face 
+    {
+        font-family: 'RIDIBatang';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0; padding: 0;}
 
-body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: white;
-}
-/*container*/
-.wrap {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
+body
+    {
+        position: absolute; left: 50%; top: 50%; 
+        transform: translate(-50%, -50%); text-align: center;
+        background: white;
+    }
+
+/* container */
+.wrap
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+
 /*게임 설명 버튼*/
-.import_button {
-    position: fixed;
-    top: 305px;
-    left: 110px;
-    border: none;
-    z-index: 1;
-    background-color: hsla(0, 0%, 0%, 0.0);
-}
+.import_button 
+    {
+        position: absolute;
+        bottom: 15%;
+        left: 11%;
+        z-index: 1;
+    }
+
+
 /*게임 시작 버튼*/
-.start_button {
-    position: fixed;
-    top: 300px;
-    left: 650px;
-    border: none;
-    z-index: 1;
-    background-color: hsla(0, 0%, 0%, 0.0);
-}
+.start_button 
+    {
+        position: absolute;
+        bottom: 25%;
+        right: 8.4%;
+        z-index: 1;
+    }
 /*바이러스 설명 버튼*/
-.virus_button {
-    position: fixed;
-    top: 367px;
-    left: 648px;
-    z-index: 1;
-    border: none;
-    background-color: hsla(0, 0%, 0%, 0.0);
-}
+.virus_button 
+    {
+        position: absolute;
+        bottom: 12%;
+        right: 7.8%;
+        z-index: 1;
+    }
 
 /*Modal 전체 레이아웃*/
 .modal {
@@ -63,8 +68,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content-play {
-    font-family: 'Yeon Sung', cursive;
-    font-weight: bold;
+    font-family: 'RIDIBatang';
     font-size: 17px;
     color: rgb(83, 56, 20);
     background-color: #fff4e3;
