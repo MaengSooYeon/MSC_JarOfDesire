@@ -1,11 +1,5 @@
 /* default settings */
-@font-face 
-    {
-        font-family: 'RIDIBatang';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
 *{margin: 0; padding: 0;}
 
@@ -68,8 +62,9 @@ body
 
 /* Modal Content/Box */
 .modal-content-play {
-    font-family: 'RIDIBatang';
-    font-size: 17px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 19px;
+    font-style: bold;
     color: rgb(83, 56, 20);
     background-color: #fff4e3;
     position: absolute;
