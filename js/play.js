@@ -1,24 +1,25 @@
 /* count에 따라 show/hide를 제어하는 함수 */
-var total_cnt = 0;
-var score = 0;
+var total_cnt = 0; //총 점수 합을 세는 전역변수 선언
+var score = 0; //각 점수가 담길 변수 선언
 
-function Count_portion(count) {
-    if (total_cnt < 3) {
-        total_cnt++;
-        ShowHidePortion(count);
+function Count_portion(count) { 
+    if (total_cnt < 3) { //total_cnt가 3보다 작으면
+        total_cnt++; //점수 계속 더해진다.
+        ShowHidePortion(count); //ShowHidePortion에서도 count
     } else {
-        alert('포션은 3개까지만 선택할 수 있습니다!');
+        alert('포션은 3개까지만 선택할 수 있습니다!'); // 만약에 3개 이상을 선택하면 alert창 띄움
     }
 }
 
-function ShowHidePortion(portion_count) {
-    $('#cauldron').hide();
+function ShowHidePortion(portion_count) { //물약 선택때 함수
+    $('#cauldron').hide(); //물약이 선택되어 부어지면서 투명한 항아리가 물약이 섞인 항아리로 이미지 바뀜
     $('#cauldron_change').show();
 
-    if (portion_count == 1) {
+    //물약 번호 선택되면 해당 id들 선택되어 보이고, 남은 id 선택 안됨
+    if (portion_count == 1) { 
         $('#red_portion_pour').show();
-        $('#red_portion_shining').show();
-        $('#yellow_portion_pour').hide();
+        $('#red_portion_shining').show(); 
+        $('#yellow_portion_pour').hide(); 
         $('#skyblue_portion_pour').hide();
         $('#blue_portion_pour').hide();
         $('#green_portion_pour').hide();
@@ -29,9 +30,9 @@ function ShowHidePortion(portion_count) {
         $('#black_portion_pour').hide();
 
     } else if (portion_count == 2) {
-        $('#yellow_portion_pour').show();
+        $('#yellow_portion_pour').show(); 
         $('#yellow_portion_shining').show();
-        $('#red_portion_pour').hide();
+        $('#red_portion_pour').hide(); 
         $('#skyblue_portion_pour').hide();
         $('#blue_portion_pour').hide();
         $('#green_portion_pour').hide();
@@ -41,9 +42,9 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 3) {
-        $('#skyblue_portion_pour').show();
-        $('#skyblue_portion_shining').show();
+    } else if (portion_count == 3) { 
+        $('#skyblue_portion_pour').show(); 
+        $('#skyblue_portion_shining').show(); 
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#blue_portion_pour').hide();
@@ -54,10 +55,10 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 4) {
+    } else if (portion_count == 4) { 
         $('#blue_portion_pour').show();
-        $('#blue_portion_shining').show();
-        $('#red_portion_pour').hide();
+        $('#blue_portion_shining').show(); 
+        $('#red_portion_pour').hide(); 
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
         $('#green_portion_pour').hide();
@@ -67,10 +68,10 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 5) {
+    } else if (portion_count == 5) { 
         $('#green_portion_pour').show();
-        $('#green_portion_shining').show();
-        $('#red_portion_pour').hide();
+        $('#green_portion_shining').show(); 
+        $('#red_portion_pour').hide(); 
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
         $('#blue_portion_pour').hide();
@@ -80,10 +81,10 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 6) {
-        $('#deepgreen_portion_pour').show();
-        $('#deepgreen_portion_shining').show();
-        $('#red_portion_pour').hide();
+    } else if (portion_count == 6) { 
+        $('#deepgreen_portion_pour').show(); 
+        $('#deepgreen_portion_shining').show(); 
+        $('#red_portion_pour').hide(); 
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
         $('#blue_portion_pour').hide();
@@ -93,9 +94,9 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 7) {
-        $('#purple_portion_pour').show();
-        $('#purple_portion_shining').show();
+    } else if (portion_count == 7) { 
+        $('#purple_portion_pour').show(); 
+        $('#purple_portion_shining').show(); 
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -106,8 +107,8 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 8) {
-        $('#brown_portion_pour').show();
+    } else if (portion_count == 8) { 
+        $('#brown_portion_pour').show(); 
         $('#brown_portion_shining').show();
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
@@ -121,7 +122,7 @@ function ShowHidePortion(portion_count) {
 
     } else if (portion_count == 9) {
         $('#white_portion_pour').show();
-        $('#white_portion_shining').show();
+        $('#white_portion_shining').show(); 
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -132,10 +133,10 @@ function ShowHidePortion(portion_count) {
         $('#brown_portion_pour').hide();
         $('#black_portion_pour').hide();
 
-    } else if (portion_count == 10) {
-        $('#black_portion_pour').show();
+    } else if (portion_count == 10) { 
+        $('#black_portion_pour').show(); 
         $('#black_portion_shining').show();
-        $('#red_portion_pour').hide();
+        $('#red_portion_pour').hide(); 
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
         $('#blue_portion_pour').hide();
@@ -146,14 +147,15 @@ function ShowHidePortion(portion_count) {
         $('#white_portion_pour').hide();
     } 
 
-    score += portion_count;
+    score += portion_count; //score에 portion_count값 선택때 마다 더해짐
 }
 
-function test() {
-    $('#cauldron').show();
-    $('#cauldron_change').hide();
+function reset() { //초기화 버튼 눌렀을때 함수
+    $('#cauldron').show(); //빈 항아리가 보이고
+    $('#cauldron_change').hide(); // 채워진 항아리 없어짐
 
-    $('#red_portion_pour').hide();
+    //모든 물약 선택 제거
+    $('#red_portion_pour').hide(); 
     $('#yellow_portion_pour').hide();
     $('#skyblue_portion_pour').hide();
     $('#blue_portion_pour').hide();
@@ -176,17 +178,18 @@ function test() {
     $('#white_portion_shining').hide();
     $('#black_portion_shining').hide();
 
-    total_cnt = 0;
+    total_cnt = 0; //total_cnt도 초기화 해주어 다시 처음부터 더해갈 수 있게 해줌
 }
 
-function View_Result() {
-    if(total_cnt < 3) {
-        alert("포션 3개를 선택해주세요!");
-        total_cnt = 0;
-        score = 0;
-        $('#cauldron').show();
+function View_Result() { //결과 보기 버튼 눌렀을때
+    if(total_cnt < 3) { //total_cnt 즉 선택된 물약이 3개보다 적을 때
+        alert("포션 3개를 선택해주세요!"); //3개를 선택해 달라고 alert띄우면서
+        total_cnt = 0; //초기화 시켜줌
+        score = 0; //초기화
+        $('#cauldron').show(); //항아리 초기화
         $('#cauldron_change').hide();
         
+        //모든 물약 선택 제거
         $('#red_portion_pour').hide();
         $('#yellow_portion_pour').hide();
         $('#skyblue_portion_pour').hide();
@@ -221,7 +224,7 @@ function View_Result() {
             8 → brown portion
             9 → white portion
             10 → black portion  */
-
+        // portion_count가 더해진 score이 아래와 같은 범위일때 범위에 맞는 페이지로 이동
         if(score >= 0 && score <=2){
             $(location).attr('href','result_1.html');
         }
