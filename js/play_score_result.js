@@ -14,47 +14,47 @@
 
 function score_result(score){
     if(0<=score<=2){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_1.html');
         });
     }
     else if(3<=score<=5){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_2.html');
         });
     }
     else if(6<=score<=8){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_3.html');
         });
     }
     else if(9<=score<=11){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_4.html');
         });
     }
     else if(12<=score<=14){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_5.html');
         });
     }
     else if(15<=score<=17){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_6.html');
         });
     }
     else if(18<=score<=20){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_7.html');
         });
     }
     else if(21<=score<=23){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_8.html');
         });
     }
     else if(24<=score<=27){
-        $(".LearnMoreBtn").click(function(){
+        $(".result_btn").click(function(){
             $(location).attr('href','result_9.html');
         });
     }
