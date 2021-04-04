@@ -1,145 +1,170 @@
 <!-- 플레이 화면 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>play</title>
-        <link rel="stylesheet" type="text/css"  href="css/play.css">            <!-- 기본 css 파일-->
-        <link rel="stylesheet" type="text/css" href="css/howplay.css">          <!-- 게임설명 css 파일-->
-        <link rel="stylesheet" type="text/css"  href="css/portion_frame.css">   <!-- 포션별 위치지정 css 파일-->
 
-        <script src="js/play.js"></script>                                      <!-- 기본 js 파일 -->
-        <script src="js/howplay.js"></script>                                   <!-- 게임설명 js 파일 -->
-        <script src="js/sound.js"></script>              <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <!-- select item audio -->
-        <audio id="bubble" src="audio/select_sound.mp3"></audio>
-        <audio id="water" src="audio/water_flow.mp3"></audio>
-        <audio id="result" src="audio/result_sound.mp3"></audio>
+<head>
+    <meta charset="utf-8">
+    <title>play</title>
+    <link rel="stylesheet" type="text/css" href="css/play.css"> <!-- 기본 css 파일-->
+    <link rel="stylesheet" type="text/css" href="css/howplay.css"> <!-- 게임설명 css 파일-->
+    <link rel="stylesheet" type="text/css" href="css/portion_frame.css"> <!-- 포션별 위치지정 css 파일-->
 
+    <script src="js/play.js"></script> <!-- 기본 js 파일 -->
+    <script src="js/howplay.js"></script> <!-- 게임설명 js 파일 -->
+    <script src="js/sound.js"></script> <!-- 아이템 선택시 효과음을 발생시키는 js 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-        <div class="wrap">
-            <!-- background image -->
-            <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
-
-            <!-- portion settings -->
-            <div class="red_portion" onclick="Count_portion(1); water_flow()">
-                <img src="image/icon/Red_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="yellow_portion" onclick="Count_portion(2); water_flow()">
-                <img src="image/icon/Yellow_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="skyblue_portion" onclick="Count_portion(3); water_flow()">
-                <img src="image/icon/skyBlue_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="blue_portion" onclick="Count_portion(4); water_flow()">
-                <img src="image/icon/Blue_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="green_portion" onclick="Count_portion(5); water_flow()">
-                <img src="image/icon/Green_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="deepgreen_portion" onclick="Count_portion(6); water_flow()">
-                <img src="image/icon/deepGreen_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="purple_portion" onclick="Count_portion(7); water_flow()">
-                <img src="image/icon/Purple_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="brown_portion" onclick="Count_portion(8); water_flow()">
-                <img src="image/icon/Brown_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="white_portion" onclick="Count_portion(9); water_flow()">
-                <img src="image/icon/White_bottle.png" style="width: 45px; height: 80px;">
-            </div>
-            <div class="black_portion" onclick="Count_portion(10); water_flow()">
-                <img src="image/icon/Black_bottle.png" style="width: 45px; height: 80px;">
-            </div> 
+<body>
+    <!-- select item audio -->
+    <audio id="bubble" src="audio/select_sound.mp3"></audio>
+    <audio id="water" src="audio/water_flow.mp3"></audio>
+    <audio id="result" src="audio/result_sound.mp3"></audio>
 
 
-            <!-- portion position - select portion -->
-            <div class="select_portion">
-                <img id="red_portion_pour" src="image/icon/Red_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="yellow_portion_pour" src="image/icon/Yellow_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="skyblue_portion_pour" src="image/icon/skyBlue_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="blue_portion_pour" src="image/icon/Blue_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="green_portion_pour" src="image/icon/Green_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="deepgreen_portion_pour" src="image/icon/deepGreen_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="purple_portion_pour" src="image/icon/Purple_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="brown_portion_pour" src="image/icon/Brown_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="white_portion_pour" src="image/icon/White_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-                <img id="black_portion_pour" src="image/icon/Black_bottle_pour.png" style="width: 120px; height: 80px; display: none;">
-            </div>
+    <div class="wrap">
+        <!-- background image -->
+        <img src="image/screen/play_screen.png" style="width: 960px; height: 480px;">
 
-            <!-- portion position - select shining portion -->
-            <div class="red_portion_shining">
-                <img id="red_portion_shining" src="image/icon/Red_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>    
-            <div class="yellow_portion_shining">
-                <img id="yellow_portion_shining" src="image/icon/Yellow_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>    
-            <div class="skyblue_portion_shining">
-                <img id="skyblue_portion_shining" src="image/icon/skyBlue_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>    
-            <div class="blue_portion_shining">
-                <img id="blue_portion_shining" src="image/icon/Blue_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>   
-            <div class="green_portion_shining">
-                <img id="green_portion_shining" src="image/icon/Green_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>   
-            <div class="deepgreen_portion_shining">  
-                <img id="deepgreen_portion_shining" src="image/icon/deepGreen_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>
-            <div class="purple_portion_shining">  
-                <img id="purple_portion_shining" src="image/icon/Purple_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>
-            <div class="brown_portion_shining">  
-                <img id="brown_portion_shining" src="image/icon/Brown_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>
-            <div class="white_portion_shining">  
-                <img id="white_portion_shining" src="image/icon/White_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>
-            <div class="black_portion_shining">  
-                <img id="black_portion_shining" src="image/icon/Black_bottle_shining.png" style="width: 50px; height: 85px; display: none;">
-            </div>
-            
-            
-            <!-- item position -->
-            <div class="result_btn" onclick="View_Result(); result_sound()">
-                <img id=result_btn src="image/icon/result_btn.png" style="width: 140px; height: 50px;">
-                <div class=result_btn_text>결과확인</div>
-            </div>
-
-            <div class="cauldron">
-                <img id=cauldron src="image/icon/Cauldron.png" style="width: 540px; height: 300px;">
-            </div>
-            <div class="cauldron_change">
-                <img id=cauldron_change src="image/icon/Cauldron_change.png" style="width: 540px; height: 300px; display: none;"> 
-            </div>
-
-            <div class="how_to_play" onclick="ShowModal(); select_sound()">
-                <div class=howtoplay_text>게임방법</div>
-                <img src="image/icon/HowtoPlayBtn.png" style="width: 260px; height: 145px;"></a>
-            </div>
-            <div class="reset" onclick="reset(); select_sound()">
-                <div class=reset_text>초기화</div>
-                <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
-            </div>
-            
-            <div class="textBox1"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
-            <div class="HomeBtnText" onclick="location.href='index.html'"> 홈으로 가기</div>
-
-            <div class="textBox2"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
-            <div class="StoryBtnText" onclick="location.href='story.html'"> 다시 스토리 보러가기</div>
+        <!-- portion settings -->
+        <div class="red_portion" onclick="Count_portion(1); water_flow()">
+            <img src="image/icon/Red_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="yellow_portion" onclick="Count_portion(2); water_flow()">
+            <img src="image/icon/Yellow_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="skyblue_portion" onclick="Count_portion(7); water_flow()">
+            <img src="image/icon/skyBlue_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="blue_portion" onclick="Count_portion(4); water_flow()">
+            <img src="image/icon/Blue_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="green_portion" onclick="Count_portion(11); water_flow()">
+            <img src="image/icon/Green_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="deepgreen_portion" onclick="Count_portion(6); water_flow()">
+            <img src="image/icon/deepGreen_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="purple_portion" onclick="Count_portion(7); water_flow()">
+            <img src="image/icon/Purple_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="brown_portion" onclick="Count_portion(8); water_flow()">
+            <img src="image/icon/Brown_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="white_portion" onclick="Count_portion(9); water_flow()">
+            <img src="image/icon/White_bottle.png" style="width: 45px; height: 80px;">
+        </div>
+        <div class="black_portion" onclick="Count_portion(10); water_flow()">
+            <img src="image/icon/Black_bottle.png" style="width: 45px; height: 80px;">
         </div>
 
-        <!-- HowToPlay contents -->
-        <div class="modal" id="modal_id">
-            <div class="modal-content-play">
-                <img src="image/icon/close.png" width="20" height="20" style="clear: both; margin-right:30px; margin-top:10px" align="right" onclick="HideModal()">
-                <br>선반에 올려진 <img src="image/icon/Red_bottle.png" style="width: 35px; height: 52px;"> 들을 3개 클릭해 바이러스를 조합 합니다.
-                <br>그리고 리셋 버튼을 눌러 포션을 다시 조합할 수 있습니다!
-                <br>**포션 클릭이 잘 되지 않는다면 포션 뚜껑(마개)을 클릭해주세요!**
-            </div>
+
+        <!-- portion position - select portion -->
+        <div class="select_portion">
+            <img id="red_portion_pour" src="image/icon/Red_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="yellow_portion_pour" src="image/icon/Yellow_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="skyblue_portion_pour" src="image/icon/skyBlue_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="blue_portion_pour" src="image/icon/Blue_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="green_portion_pour" src="image/icon/Green_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="deepgreen_portion_pour" src="image/icon/deepGreen_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="purple_portion_pour" src="image/icon/Purple_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="brown_portion_pour" src="image/icon/Brown_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="white_portion_pour" src="image/icon/White_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
+            <img id="black_portion_pour" src="image/icon/Black_bottle_pour.png"
+                style="width: 120px; height: 80px; display: none;">
         </div>
-    </body>
+
+        <!-- portion position - select shining portion -->
+        <div class="red_portion_shining">
+            <img id="red_portion_shining" src="image/icon/Red_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="yellow_portion_shining">
+            <img id="yellow_portion_shining" src="image/icon/Yellow_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="skyblue_portion_shining">
+            <img id="skyblue_portion_shining" src="image/icon/skyBlue_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="blue_portion_shining">
+            <img id="blue_portion_shining" src="image/icon/Blue_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="green_portion_shining">
+            <img id="green_portion_shining" src="image/icon/Green_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="deepgreen_portion_shining">
+            <img id="deepgreen_portion_shining" src="image/icon/deepGreen_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="purple_portion_shining">
+            <img id="purple_portion_shining" src="image/icon/Purple_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="brown_portion_shining">
+            <img id="brown_portion_shining" src="image/icon/Brown_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="white_portion_shining">
+            <img id="white_portion_shining" src="image/icon/White_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+        <div class="black_portion_shining">
+            <img id="black_portion_shining" src="image/icon/Black_bottle_shining.png"
+                style="width: 50px; height: 85px; display: none;">
+        </div>
+
+
+        <!-- item position -->
+        <div class="result_btn" onclick="View_Result(); result_sound()">
+            <img id=result_btn src="image/icon/result_btn.png" style="width: 140px; height: 50px;">
+            <div class=result_btn_text>결과확인</div>
+        </div>
+
+        <div class="cauldron">
+            <img id=cauldron src="image/icon/Cauldron.png" style="width: 540px; height: 300px;">
+        </div>
+        <div class="cauldron_change">
+            <img id=cauldron_change src="image/icon/Cauldron_change.png"
+                style="width: 540px; height: 300px; display: none;">
+        </div>
+
+        <div class="how_to_play" onclick="ShowModal(); select_sound()">
+            <div class=howtoplay_text>게임방법</div>
+            <img src="image/icon/HowtoPlayBtn.png" style="width: 260px; height: 145px;"></a>
+        </div>
+        <div class="reset" onclick="reset(); select_sound()">
+            <div class=reset_text>초기화</div>
+            <img src="image/icon/ResetBtn.png" style="width: 180px; height: 180px;">
+        </div>
+
+        <div class="textBox1"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
+        <div class="HomeBtnText" onclick="location.href='index.html'"> 홈으로 가기</div>
+
+        <div class="textBox2"><img src="image/icon/textBox.png" style="width: 170px; height: 40px;"></div>
+        <div class="StoryBtnText" onclick="location.href='story.html'"> 다시 스토리 보러가기</div>
+    </div>
+
+    <!-- HowToPlay contents -->
+    <div class="modal" id="modal_id">
+        <div class="modal-content-play">
+            <img src="image/icon/close.png" width="20" height="20"
+                style="clear: both; margin-right:30px; margin-top:10px" align="right" onclick="HideModal()">
+            <br>선반에 올려진 <img src="image/icon/Red_bottle.png" style="width: 35px; height: 52px;"> 들을 3개 클릭해 바이러스를 조합 합니다.
+            <br>그리고 리셋 버튼을 눌러 포션을 다시 조합할 수 있습니다!
+            <br>**포션 클릭이 잘 되지 않는다면 포션 뚜껑(마개)을 클릭해주세요!**
+        </div>
+    </div>
+</body>
+
 </html>
